@@ -1,12 +1,12 @@
 @font-face {
-    font-family: solid;
+    font-family: 'solid';
     src: url('../font/solid.ttf');
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: solid;
+    font-family: 'solid';
 }
 
 /* Navigatie en header*/
