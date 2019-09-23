@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "solid";
+    src: url('../font/solid.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "solid";
+}
+
+/* Navigatie en header*/
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    box-shadow: inset 0px -14px 8px -4px rgba(0, 0, 0, 1);
+    background-color: #0026cc;
+}
+
+li {
+    padding: 2vw;
+}
+
+a {
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: white;
+}
+
+video {
+    width: 100%;
+    margin: 0 auto ;
+}
+
+img {
+    width: 3vw;
+}
+
+#filter {
+    background-color: #73cd72;
+    padding: 2vh;
+    font-size: 2vw;
+    margin: 0;
+    box-shadow: inset 0px -9px 8px -4px rgba(0, 0, 0, 1);
+}
+
+#filter a {
+    padding: 1vw;
+}
+
+/*Body met content*/
+
+main {
+    background-image: url(../img/bodyachtergrond.png);
+    background-size: contain;
+    background-position: center;
+}
+
+h3 {
+    display: none ;
+}
+
+#artiesten {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.artiest {
+    background-color: #73cd72;
+    box-shadow: inset 0px 1px 18px 4px rgba(0, 0, 0, 1);
+    margin: 5%;
+    padding: 8%;
+    height: 350px;
+}
+
+.artiestplaatje {
+    height: 200px;
+    width: auto;
+}
+
+#artiesten2 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+button {
+    background-color: #73cd72;
+    border: none;
+    font-family: Solid;
+    font-size: 0.6em;
+    color: white;
+}
+
+/*Footer*/
+
+footer {
+    background-color: blue;
+}
+
+footer img {
+    width: 50px;
+}
+
+#bedrijven {
+    background-color: white;
+}
+
+#socialennieuws {
+    display: flex ;
+    justify-content: flex-start ;
+    padding: 2vw ;
+    border-bottom: solid white ;
+}
+
+#nieuwsbrief {
+    padding-left: 70vw ;
+}
+
+#info {
+    display: flex ;
+    justify-content: space-around ;
+    width: 60vw ;
+    padding: 2vw ;
+}
+
+/*Media query*/
+@media (max-width: 1400px) {
+    #artiesten2 {
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media (max-width: 1000px) {
+    #artiesten {
+        grid-template-columns: 1fr;
+    }
+
+    #artiesten2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    a {
+        font-size: 1.5vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+
+    h2 {
+        font-size: 4.2vw;
+    }
+
+    @media (max-width: 1000px) {
+        #artiesten2 {
+            grid-template-columns: 1fr;
+        }
+    }
