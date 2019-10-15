@@ -1,0 +1,154 @@
+@font-face {
+    font-family: solid;
+    src: url(../font/solid.ttf);
+}
+/*
+@font-face kennis
+Bron: https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: solid;
+}
+
+p {
+    font-family: sans-serif ;
+    max-width: 70ch ;
+}
+
+/* Navigatie en header*/
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    box-shadow: inset 0px -14px 8px -4px rgba(0, 0, 0, 1);
+    background-color: #0026cc;
+    overflow-x: scroll;
+}
+
+/* 
+box-shadow kennis
+Bron: https://www.cssmatic.com/box-shadow 
+overflow-x kennis
+Bron: Nino Schelcher
+*/
+
+li {
+    padding: 2vw;
+}
+
+h1 {
+    font-size: 2vw ;
+}
+
+h2 {
+    font-size: 3vw ;
+}
+
+a {
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: white;
+}
+
+a img {
+    width: 3vw;
+}
+
+/*Body met content*/
+
+main {
+    background-image: url(../img/bodyachtergrond.png);
+    background-size: contain;
+    background-position: center;
+}
+
+article {
+    background-color: #73cd72;
+    box-shadow: inset 0px 1px 18px 4px rgba(0, 0, 0, 1);
+    margin: 0 10%;
+    padding: 2% 8%;
+}
+
+article img {
+    width: 80%;
+}
+
+button img {
+    width: 4vw;
+}
+
+a:hover {
+    color: limegreen;
+}
+
+button {
+    background-color: #73cd72;
+    border: none;
+    font-family: Solid;
+    font-size: 1em;
+    color: white;
+}
+
+form {
+    margin: 10% 0 10% ;
+    width: 40vw ;
+}
+
+input {
+    width: 200px ;
+}
+
+input[type=submit] {
+    margin-top: 20px ;
+}
+/* Selecteren van specifiek inputveld
+Bron: https://www.w3schools.com/css/css_form.asp*/
+
+label {
+    margin-right: 100% ;
+}
+
+ {
+    background-color: antiquewhite ;
+}
+
+/*Footer*/
+
+footer {
+    background-color: blue;
+    width: 100% ;
+}
+
+footer p {
+    font-family: solid ;
+}
+
+input {
+    margin: 0 ;
+}
+
+#socialennieuws {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: solid white;
+    align-items: center ;
+}
+
+footer img {
+    width: 50px ;
+}
+
+#info {
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+#bedrijven {
+    background-color: white;
+}

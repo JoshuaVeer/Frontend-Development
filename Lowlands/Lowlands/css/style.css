@@ -1,0 +1,192 @@
+@font-face {
+    font-family: solid;
+    src: url(../font/solid.ttf);
+}
+/*
+@font-face kennis
+Bron: https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: solid;
+}
+
+/* Navigatie en header*/
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    box-shadow: inset 0px -14px 8px -4px rgba(0, 0, 0, 1);
+    background-color: #0026cc;
+    overflow-x: scroll;
+}
+/* 
+box-shadow kennis
+Bron: https://www.cssmatic.com/box-shadow 
+overflow-x kennis
+Bron: Nino Schelcher
+*/
+
+li {
+    padding: 2vw;
+}
+
+h2 {
+    font-size: 3vw ;
+}
+
+a {
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: white;
+}
+
+a img {
+    width: 3vw;
+}
+
+video {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+#filter {
+    background-color: #73cd72;
+    padding: 2vh;
+    font-size: 2vw;
+    margin: 0;
+    box-shadow: inset 0px -9px 8px -4px rgba(0, 0, 0, 1);
+}
+
+#filter button:hover {
+    color: blue;
+}
+
+/*Body met content*/
+
+main {
+    background-image: url(../img/bodyachtergrond.png);
+    background-size: contain;
+    background-position: center;
+}
+
+article a:hover {
+    color: blue;
+}
+
+article a:focus {
+    color: blue;
+}
+
+h3 {
+    display: none;
+}
+
+main section:nth-child(3) {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main section:nth-child(4) {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* Grid kennis
+Bron: https://css-tricks.com/snippets/css/complete-guide-grid/
+nth-child kennis    
+bron: Nino Schelcher
+*/
+
+article {
+    background-color: #73cd72;
+    box-shadow: inset 0px 1px 18px 4px rgba(0, 0, 0, 1);
+    margin: 10%;
+    padding: 8%;
+}
+
+article img {
+    width: 100%;
+}
+
+
+button img {
+    width: 4vw;
+}
+
+a:hover {
+    color: limegreen;
+}
+
+button {
+    background-color: #73cd72;
+    border: none;
+    font-family: Solid;
+    font-size: 1em;
+    color: white;
+}
+
+/*Footer*/
+
+footer {
+    background-color: blue;
+    width: 100% ;
+}
+
+input {
+    margin: 0 ;
+}
+
+#socialennieuws {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: solid white;
+    align-items: center ;
+}
+
+footer img {
+    width: 50px ;
+}
+
+#info {
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+#bedrijven {
+    background-color: white;
+}
+
+/*Media query */
+
+@media (max-width: 1200px) {
+    main section:nth-child(4) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    main section:nth-child(3) {
+        grid-template-columns: 1fr;
+    }
+
+    main section:nth-child(4) {
+        grid-template-columns: 1fr;
+    }
+        h2 {
+        font-size: 6vw ;
+    }
+    p {
+        font-size: 3vw ;
+    }
+    button img {
+    width: 8vw;
+}
